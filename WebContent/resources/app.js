@@ -52,7 +52,7 @@ var login={email:$scope.email,
           password:$scope.password };
   $http({
   method:'POST',
-  url:'http://employeeportal.apps.eu01.cf.canopy-cloud.com/login',
+  url:'http://client-employportal.apps.ose.canopy-cloud.com/login',
   data:login,
   header:{'Content-Type':'application/json'}
   }).success(function (data, status, headers, config) {
@@ -97,7 +97,7 @@ var signup={
   
   $http({
   method:'POST',
-  url:'http://employeeportal.apps.eu01.cf.canopy-cloud.com/registerEmployee',
+  url:'http://client-employportal.apps.ose.canopy-cloud.com/registerEmployee',
   data:signup,
   header:{'Content-Type':'application/json'}
   }).success(function (data, status, headers, config) {
@@ -152,7 +152,7 @@ App.controller('showemployee', ['$scope', '$http', '$state','$rootScope', functi
 
   $http({
   method:'GET',
-  url:'http://employeeportal.apps.eu01.cf.canopy-cloud.com/employees',
+  url:'http://client-employportal.apps.ose.canopy-cloud.com/employees',
   
   }).success(function (data, status, headers, config) {
       //  alert('success!!! Employee Fetched !!!');
@@ -197,7 +197,7 @@ App.controller('EmployeeUpdate', ['$scope', '$http', '$state','$rootScope', func
 var uid=$rootScope.updateId;
 $http({
   method:'GET',
-  url:'http://employeeportal.apps.eu01.cf.canopy-cloud.com/getEmployeeInfo/'+uid
+  url:'http://client-employportal.apps.ose.canopy-cloud.com/getEmployeeInfo/'+uid
   
   }).success(function (data, status, headers, config) {
         alert('success!!! Employee Information Fetched !!!');
@@ -225,7 +225,7 @@ var employeeupdatedata={
 
   $http({
   method:'POST',
-  url:'http://employeeportal.apps.eu01.cf.canopy-cloud.com/updateEmployee',
+  url:'http://client-employportal.apps.ose.canopy-cloud.com/updateEmployee',
   data:employeeupdatedata,
   header:{'Content-Type':'application/json'}
   }).success(function (data, status, headers, config) {
