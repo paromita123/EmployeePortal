@@ -34,8 +34,8 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
 			value="jdbc:mysql://172.30.175.85:3306/scott" />
-		<property name="username" value="admin" />
-		<property name="password" value="root" />
+		<property name="username" value="vikram" />
+		<property name="password" value="vikram" />
 	</bean>
 	  
 	<!-- <mvc:resources mapping="/resources/**" location="/resources/theme1/" cache-period="31556926"/> -->
