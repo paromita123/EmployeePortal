@@ -5,6 +5,6 @@
 <title>Server</title>
 </head>
 <body>
-<h1>Hello Web Service is Running.....</h1>
+<h1>Hello Web Service is Running...</h1>
 </body>
 </html>
